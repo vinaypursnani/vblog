@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<h1> Home Page </h1>
+{% for post in posts %}
+    <h2> Blog Posted on </h2> <p>{{ post.posted_on }}</p>
+    <h2> Blog Content </h2> <p>{{ post.blog_content }}</p>
+    <h2> Author </h2> <p>{{ post.author }}</p>
+{% endfor %}
+
+</body>
+</html>
